@@ -1,0 +1,1 @@
+apt install lm-sensors htop powertop libgl1 libegl1 -y
