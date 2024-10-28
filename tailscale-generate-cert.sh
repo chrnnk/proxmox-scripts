@@ -1,4 +1,4 @@
-te#!/bin/bash
+#!/bin/bash
 apt install jq -y
 NAME="$(tailscale status --json | jq '.Self.DNSName | .[:-1]' -r)"
 tailscale cert "${NAME}"
